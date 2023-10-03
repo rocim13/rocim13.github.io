@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+
+    <link rel="stylesheet" href="./blog.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <h1 class="logo">HUELLITAS</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <img src="Imagenes/icons8-menú.svg" alt="" class="menu-btn">
+    </nav>
+ 
+    <section class="events">
+        <div class="title">
+            <h1>SOCIALIZACIÓN DEL CACHORRO</h1>
+        </div>
+        <div class="row">
+            <div class="col1">
+                <img src="IMAGENES/NEONATAL.jpg" alt="">
+                <h4>PERIODO NEONATAL</h4>
+                <p>El criador debe manipular suavemente al cachorro y por periodos cortos, para acelerar la maduración del sistema nervioso y mejorar su resistencia al estrés, capacidad de aprendizaje y su estabilidad emocional. En este momento dependen de la madre, solo duerme y se alimenta.</p>
+                
+            </div>
+            <div class="col2">
+                <img src="IMAGENES/SOCI.jpg" alt="">
+                <h4>PERIODO DE SOCIALIZACIÓN CON SU NUEVA FAMILIA</h4>
+                <p>La familia debe enseñarle las reglas de convivencia, a hacer sus necesidades en un sitio y a familiarizarse con estímulos dentro de casa, con personas dentro y fuera de casa, visita al veterinario o paseos en auto, uso de collar, etc. En el periodo de Socialización desde la 6ta hasta las 12 semanas de vida, debes tratar de exponer a tu cachorro a la mayor cantidad de estímulos posibles.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="ads-banner" >
+            <a href="https://ads.google.com/" target="_blank">
+                <img src="../IMAGENES/BANER1.jpg" alt="ads1" width="100%" height="100%">
+            </a>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <p>Teléfono: 998/453/000 / Gmail: huellita@gmail.com</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventlistener('click' ,()=>{
+            navlinks.classlist.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

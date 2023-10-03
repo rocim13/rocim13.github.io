@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+
+    <link rel="stylesheet" href="./blog.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <h1 class="logo">HUELLITAS</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <img src="Imagenes/icons8-menú.svg" alt="" class="menu-btn">
+    </nav>
+ 
+    <section class="events">
+        <div class="title">
+            <h1>NOSOTROS</h1>
+        </div>
+        <div class="row">
+            <div class="col1">
+                <img src="IMAGENES/masco1.jpg" alt="">
+                <p>Desde su fundación, fue conocida por el desarrollo de nuevas técnicas y herramientas quirúrgicas y de rehabilitación, que permitieron ser una Clínica Veterinaria referente en el País y diferenciarse con propuestas innovadoras, como fue la silla de ruedas para mascotas, que permite realizar una adecuada rehabilitación en casos con buen pronóstico, así como ser instrumento de movilización del paciente aportando calidad de vida en otros casos.</p>
+                
+            </div>
+            <div class="col2">
+                <img src="IMAGENES/masco2.jpg" alt="">
+                <p>Actualmente, es una Clínica Veterinaria multidisciplinaria que ofrece diferentes especialidades, conformada por un staff de 25 Médicos Veterinarios, liderados por el Dr. Pancho Cavero, en las sedes de Barranco, Lince, San Borja, Los Olivos y San Juan de Miraflores, ofreciendo servicios médicos de calidad con el uso de equipos médicos de última generación.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="ads-banner" >
+            <a href="https://ads.google.com/" target="_blank">
+                <img src="IMAGENES/VANERRO.jpg" alt="ads1" width="100%" height="100%">
+            </a>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <p>Teléfono: 998/453/000 / Gmail: huellita@gmail.com</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventlistener('click' ,()=>{
+            navlinks.classlist.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
